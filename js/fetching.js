@@ -64,7 +64,7 @@ function mostrarAdivinzaAleatoria() {
 
 // Función para mezclar un arreglo de forma aleatoria
 function shuffle(array) {
-    let currentIndex = array.length,
+    let currentIndex = array.length -1,
         randomIndex,
         temporaryValue;
 

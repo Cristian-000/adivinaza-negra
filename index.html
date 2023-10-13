@@ -6,6 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adivinanza Negra</title>
     <style>
+        @media (max-width: 768px) {
+            header {
+                display: none;
+                /* Oculta el header en pantallas con un ancho máximo de 768px */
+            }
+            #containerPropuesta {
+            display: flex;
+            flex-direction: column;
+            max-width: 70vw;
+            margin: 10px auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            min-height: 30vh;
+        }
+        }
+
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
@@ -21,17 +41,17 @@
         }
 
         h1 {
-            font-size: 2em;
+            font-size: 1.4em;
         }
 
         h3 {
-            font-size: 1.5em;
+            font-size: 1.2em;
             color: #c2c2c2;
         }
 
         main {
             text-align: center;
-            padding: 20px;
+            background-color: #f0f0f0;
         }
 
         #opciones button.selected {
@@ -43,16 +63,16 @@
         }
 
         #containerPropuesta {
-            display: block;
-            min-width: 50vw;
-            max-width: 85vw;
-            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            max-width: 70vw;
+            margin: 10px auto;
             background-color: #fff;
             border: 1px solid #ddd;
-            padding: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
         }
 
         #tituloProp {
@@ -63,7 +83,6 @@
         }
 
         #opciones {
-            margin-top: 20px;
             text-align: center;
         }
 
@@ -72,51 +91,47 @@
             color: white;
             padding: 10px 20px;
             margin: 10px auto;
-  
             border: none;
             cursor: pointer;
-            display: grid;
-            min-width: 50vw;
-            max-width: 85vw;
-            font-size: 1.2rem;
+            min-width: 70vw;
+            font-size: 1.1rem;
             font-weight: bold;
-    
         }
 
-
-
         #correcta {
+            margin-left: 15vw;
+            text-align: left;
             font-weight: bold;
-            margin: 20px;
+
+        }
+
+        #buttonAndResponseContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            /* Esto alinea la respuesta en la parte superior */
         }
 
         #cargarOtraAdiv {
             background-color: #333;
             color: white;
             padding: 10px 20px;
+            margin-right: 15vw;
             border: none;
             cursor: pointer;
         }
 
         footer {
-    width: 100%;
-    background-color: #ccc; /* Cambia el color de fondo según tus preferencias */
-    position: fixed;
-    bottom: 0;
-    left: 0;
-}
-
-.linea-horizontal {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px; /* Espaciado entre los segmentos */
-}
-
-.segmento {
-    width: calc(100% / NUMERO_DE_ADIVINZAS); /* Ajusta el ancho de cada segmento */
-    height: 2px; /* Altura de la línea */
-    background-color: #000; /* Color de la línea */
-}
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+        .linea-horizontal {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+        }
 
     </style>
 </head>
@@ -133,14 +148,17 @@
             <div id="propuesta"></div>
             <div id="pregunta"></div>
         </section>
-
         <div id="opciones"></div>
-        <div id="correcta"></div>
-        <button id="cargarOtraAdiv">Siguiente</button>
+        <div id="buttonAndResponseContainer">
+            <div id="correcta"></div>
+            <button id="cargarOtraAdiv">Siguiente</button>
+        </div>
+
+
     </main>
     <footer id="footer">
         <div class="lineaHorizontal">
-           
+
         </div>
     </footer>
     <script src="js/linea.js"></script>
