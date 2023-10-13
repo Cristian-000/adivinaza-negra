@@ -32,7 +32,7 @@
         "question": "¿Qué soy?",
         "options": [
             "Un piano",
-            "Una manzana",
+            "Una picha",
             "Un corazón",
             "Un tomate"
         ],
@@ -46,8 +46,8 @@
         "options": [
             "Un ataúd",
             "Un libro",
-            "Un palo",
-            "Un vaso"
+            "Un palito",
+            "Un vaso alto"
         ],
         "correct": "Un ataúd"
     },
@@ -58,7 +58,7 @@
         "question": "¿Qué soy?",
         "options": [
             "Un engranaje",
-            "Un cuervo",
+            "Un agujero",
             "Un gusano",
             "Una llave"
         ],
@@ -73,7 +73,7 @@
             "Un pañuelo",
             "Un huevo",
             "Un ladrillo",
-            "Un zapato"
+            "Un pajero"
         ],
         "correct": "Un pañuelo"
     },
@@ -85,7 +85,7 @@
         "options": [
             "Un cigarrillo",
             "Un caramelo",
-            "Un alambre",
+            "Una venosa",
             "Una vela"
         ],
         "correct": "Un cigarrillo"
@@ -98,7 +98,7 @@
         "options": [
             "Un pie",
             "Un beso",
-            "Un cigarro",
+            "Una zanahoria",
             "Un cuchillo"
         ],
         "correct": "Un pie"

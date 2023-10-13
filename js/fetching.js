@@ -64,7 +64,7 @@ function mostrarAdivinzaAleatoria() {
 
 // Función para mezclar un arreglo de forma aleatoria
 function shuffle(array) {
-    let currentIndex = array.length -1,
+    let currentIndex = array.length-1,
         randomIndex,
         temporaryValue;
 
@@ -107,59 +107,63 @@ function comprobarRespuesta(respuesta, correctaRespuesta) {
         colorearSiguienteSegmento();
         respuestaCorrecta = true;
     }
-    currentAdivinzaIndex++;
-
-    // if (currentAdivinzaIndex <= adivinanzas.length) {
-    //     cargarOtraAdiv.addEventListener('click', () => {
-    //         correcta.textContent = '';
-    //         mostrarAdivinzaAleatoria();
-    //         respuestaCorrecta = false;
-    //     });
-    // } else {
-    //     mostrarResultadoFinal();
-    // }
+    cargarOtraAdiv.removeAttribute('disabled');
 }
+
 
 function mostrarResultadoFinal() {
     // Mostrar un mensaje con la cantidad de adivinanzas acertadas y erradas
     alert(`Adivinanzas acertadas: ${adivinanzasAcertadas}\nAdivinanzas erradas: ${adivinanzasErradas}`);
-
     // Reiniciar el juego
     adivinanzasPorMostrar = [...adivinanzas];
     currentAdivinzaIndex = 0;
     segmentoActual = 0;
     adivinanzasAcertadas = 0;
     adivinanzasErradas = 0;
+    respuestaCorrecta = false
 
     // Reiniciar la línea de segmentos
     const segmentos = document.querySelectorAll('.segmento');
     segmentos.forEach((segmento) => {
         segmento.style.backgroundColor = '#000';
     });
+    cargarOtraAdiv.textContent = 'Siguiente';
+        cargarOtraAdiv.style.backgroundColor = '#333';
     
-
+    // Mostrar la primera adivinanza después de reiniciar
     mostrarAdivinzaAleatoria();
 }
+
 
 // Función para colorear el siguiente segmento de la línea
 function colorearSiguienteSegmento() {
     const segmentos = document.querySelectorAll('.segmento');
+   
     if (segmentoActual < segmentos.length) {
         segmentos[segmentoActual].style.backgroundColor = cargarOtraAdiv.style.backgroundColor;
-        segmentoActual++;
     }
+    if (segmentoActual === segmentos.length - 1) {
+        // Cambiar el texto y el color del botón en el último segmento
+        cargarOtraAdiv.textContent = 'Reiniciar';
+        cargarOtraAdiv.style.backgroundColor = 'gold'; // o el color dorado que desees
+    }
+ 
+    segmentoActual++;
 }
 
-// Al hacer clic en el botón "Siguiente", mostrar la siguiente adivinanza aleatoria
+
 cargarOtraAdiv.addEventListener('click', () => {
-    if (currentAdivinzaIndex <= adivinanzas.length) {
+    if (currentAdivinzaIndex < adivinanzas.length - 1) {
         correcta.textContent = '';
         mostrarAdivinzaAleatoria();
         respuestaCorrecta = false;
+        currentAdivinzaIndex++; // Mover el incremento aquí
     } else {
         mostrarResultadoFinal();
     }
+    cargarOtraAdiv.setAttribute('disabled', 'disabled');
 });
+
 // Iniciar la carga de adivinanzas
 cargarAdivinanzas();
 
