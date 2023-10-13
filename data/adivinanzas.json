@@ -1,28 +1,119 @@
 [
-{
-    "id": 1,
-    "name": "Tengo un par",
-    "description": "Tengo un par, van colgando y al caminar se van desplazando..",
-    "question": "¿Que son?",
-    "options": [
-      "Orejas",
-      "Bolas",
-      "Tetas",
-      "Brazos"
-    ],
-    "correct": "Brazos"    
-},
-{
-    "id": 2,
-    "name": "¡Siete veces más grande!",
-    "description": "Hay una parte del cuerpo del hombre que puede aumentar hasta siete veces su tamaño",
-    "question": "¿Que será?",
-    "options": [
-      "Uñas",
-      "Ego",
-      "Banana",
-      "Pupilas"
-    ],
-    "correct": "Pupilas"   
-}
+    {
+        "id": 1,
+        "name": "Tengo un par",
+        "description": "Tengo un par, van colgando y al caminar se van desplazando..",
+        "question": "¿Que son?",
+        "options": [
+            "Orejas",
+            "Bolas",
+            "Tetas",
+            "Brazos"
+        ],
+        "correct": "Brazos"
+    },
+    {
+        "id": 2,
+        "name": "¡Siete veces más grande!",
+        "description": "Hay una parte del cuerpo del hombre que puede aumentar hasta siete veces su tamaño",
+        "question": "¿Que será?",
+        "options": [
+            "Uñas",
+            "Ego",
+            "Banana",
+            "Pupilas"
+        ],
+        "correct": "Pupilas"
+    },
+    {
+        "id": 3,
+        "name": "Son negros y rojos",
+        "description": "Soy negro como el carbón y rojo como la sangre. Mi sonido es un gemido.",
+        "question": "¿Qué soy?",
+        "options": [
+            "Un piano",
+            "Una manzana",
+            "Un corazón",
+            "Un tomate"
+        ],
+        "correct": "Un piano"
+    },
+    {
+        "id": 4,
+        "name": "Delgado y profundo",
+        "description": "Soy alto, duro y suelo entrar profundo.",
+        "question": "¿Qué soy?",
+        "options": [
+            "Un ataúd",
+            "Un libro",
+            "Un palo",
+            "Un vaso"
+        ],
+        "correct": "Un ataúd"
+    },
+    {
+        "id": 5,
+        "name": "No veo pero tengo un diente",
+        "description": "¿Qué tiene ojos y no puede ver, tiene un diente y no puede morder?",
+        "question": "¿Qué soy?",
+        "options": [
+            "Un engranaje",
+            "Un cuervo",
+            "Un gusano",
+            "Una llave"
+        ],
+        "correct": "Un engranaje"
+    },
+    {
+        "id": 6,
+        "name": "No se rompe al caer",
+        "description": "Si me tiras al suelo, no me rompo. Si me tiras al techo, no me agarro.",
+        "question": "¿Qué soy?",
+        "options": [
+            "Un pañuelo",
+            "Un huevo",
+            "Un ladrillo",
+            "Un zapato"
+        ],
+        "correct": "Un pañuelo"
+    },
+    {
+        "id": 7,
+        "name": "Largo, delgado y punto fuerte largo",
+        "description": "Soy largo, delgado y mi punto fuerte es largo.",
+        "question": "¿Qué soy?",
+        "options": [
+            "Un cigarrillo",
+            "Un caramelo",
+            "Un alambre",
+            "Una vela"
+        ],
+        "correct": "Un cigarrillo"
+    },
+    {
+        "id": 8,
+        "name": "En la boca pero no bienvenido",
+        "description": "A menudo visto en la boca de un hombre, pero no soy bienvenido.",
+        "question": "¿Qué soy?",
+        "options": [
+            "Un pie",
+            "Un beso",
+            "Un cigarro",
+            "Un cuchillo"
+        ],
+        "correct": "Un pie"
+    },
+    {
+        "id": 9,
+        "name": "No veo pero soy comestible",
+        "description": "Tengo ojos pero no veo.",
+        "question": "¿Qué soy?",
+        "options": [
+            "Una papa",
+            "Un ojo humano",
+            "Una lámpara",
+            "Un pez"
+        ],
+        "correct": "Una papa"
+    }
 ]

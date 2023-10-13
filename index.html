@@ -4,6 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adivinanza Negra</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        main {
+            text-align: center;
+            padding: 20px;
+        }
+        #tituloProp{
+            color: #ddd;
+            background-color: #000;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        #propuesta {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #opciones {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #opciones button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            display: block;
+            width: 50%;
+            margin: 0 auto; /* Centrar horizontalmente */
+        }
+
+        #correcta {
+            font-weight: bold;
+            margin: 20px;
+        }
+
+        #cargarOtraAdiv {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,10 +86,13 @@
         <h2>Adivinanzas con doble sentido para jugar en grupo y divertirse</h2>
     </section>
     <main>
+        <div id="tituloProp"></div>
         <div id="propuesta"></div>
+        <div id="pregunta"></div>
         <div id="opciones"></div>
         <div id="correcta"></div>
         <button id="cargarOtraAdiv">Siguiente</button>
     </main>
+    <Script src="js/fetching.js"></Script>
 </body>
 </html>
