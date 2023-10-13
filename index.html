@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,28 +24,42 @@
             font-size: 2em;
         }
 
-        h2 {
+        h3 {
             font-size: 1.5em;
+            color: #c2c2c2;
         }
 
         main {
             text-align: center;
             padding: 20px;
         }
-        #tituloProp{
-            color: #ddd;
-            background-color: #000;
-            border: 1px solid #ddd;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        #opciones button.selected {
+            box-shadow: 0 0 10px green;
         }
-        #propuesta {
+
+        #opciones button.noSelected {
+            box-shadow: 0 0 10px red;
+        }
+
+        #containerPropuesta {
+            display: block;
+            min-width: 50vw;
+            max-width: 85vw;
+            margin: 0 auto;
             background-color: #fff;
             border: 1px solid #ddd;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        }
+
+        #tituloProp {
+            color: rgb(0, 0, 0);
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
         }
 
         #opciones {
@@ -53,16 +68,22 @@
         }
 
         #opciones button {
-            background-color: #333;
+            background-color: hsl(0, 0%, 29%);
             color: white;
             padding: 10px 20px;
-            margin: 5px;
+            margin: 10px auto;
+  
             border: none;
             cursor: pointer;
-            display: block;
-            width: 50%;
-            margin: 0 auto; /* Centrar horizontalmente */
+            display: grid;
+            min-width: 50vw;
+            max-width: 85vw;
+            font-size: 1.2rem;
+            font-weight: bold;
+    
         }
+
+
 
         #correcta {
             font-weight: bold;
@@ -76,23 +97,54 @@
             border: none;
             cursor: pointer;
         }
+
+        footer {
+    width: 100%;
+    background-color: #ccc; /* Cambia el color de fondo según tus preferencias */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.linea-horizontal {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px; /* Espaciado entre los segmentos */
+}
+
+.segmento {
+    width: calc(100% / NUMERO_DE_ADIVINZAS); /* Ajusta el ancho de cada segmento */
+    height: 2px; /* Altura de la línea */
+    background-color: #000; /* Color de la línea */
+}
+
     </style>
 </head>
+
 <body>
     <header>
         <h1>Adivinanza Negra</h1>
+        <h3>Adivinanzas con doble sentido para jugar en grupo y divertirse</h3>
     </header>
-    <section>
-        <h2>Adivinanzas con doble sentido para jugar en grupo y divertirse</h2>
-    </section>
+
     <main>
-        <div id="tituloProp"></div>
-        <div id="propuesta"></div>
-        <div id="pregunta"></div>
+        <section id="containerPropuesta">
+            <div id="tituloProp"></div>
+            <div id="propuesta"></div>
+            <div id="pregunta"></div>
+        </section>
+
         <div id="opciones"></div>
         <div id="correcta"></div>
         <button id="cargarOtraAdiv">Siguiente</button>
     </main>
+    <footer id="footer">
+        <div class="lineaHorizontal">
+           
+        </div>
+    </footer>
+    <script src="js/linea.js"></script>
     <Script src="js/fetching.js"></Script>
 </body>
+
 </html>
