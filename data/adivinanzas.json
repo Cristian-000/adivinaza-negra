@@ -1,0 +1,28 @@
+[
+{
+    "id": 1,
+    "name": "Tengo un par",
+    "description": "Tengo un par, van colgando y al caminar se van desplazando..",
+    "question": "¿Que son?",
+    "options": [
+      "Orejas",
+      "Bolas",
+      "Tetas",
+      "Brazos"
+    ],
+    "correct": "Brazos"    
+},
+{
+    "id": 2,
+    "name": "¡Siete veces más grande!",
+    "description": "Hay una parte del cuerpo del hombre que puede aumentar hasta siete veces su tamaño",
+    "question": "¿Que será?",
+    "options": [
+      "Uñas",
+      "Ego",
+      "Banana",
+      "Pupilas"
+    ],
+    "correct": "Pupilas"   
+}
+]
