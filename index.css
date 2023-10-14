@@ -102,7 +102,6 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    /* Esto alinea la respuesta en la parte superior */
 }
 
 #cargarOtraAdiv {
@@ -112,6 +111,7 @@ main {
     margin-right: 15vw;
     border: none;
     cursor: pointer;
+    font-weight: bold;
 }
 
 footer {
@@ -119,10 +119,17 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
+    background-color: #f0f0f0;
 }
 .linea-horizontal {
     display: flex;
     justify-content: space-between;
     padding: 5px;
+    background-color: #f0f0f0;
 }
+.segmento {
+    width: calc(100% / 30);
+    height: 15px;
+    border-right: 3px solid #ccc; /* Línea a la derecha de cada segmento */
+  }
 
