@@ -108,7 +108,14 @@ function comprobarRespuesta(respuesta, correctaRespuesta) {
 
 
 function mostrarResultadoFinal() {
-    alert(`Adivinanzas acertadas: ${adivinanzasAcertadas}\nAdivinanzas erradas: ${adivinanzasErradas}`);
+    if (adivinanzasAcertadas > adivinanzas.length -2) {
+        alert(`¡Excelente! Has acertado ${adivinanzasAcertadas} adivinanzas y solo erraste ${adivinanzasErradas}.\n ¡Eres un experto en adivinanzas de mierda!`);
+      } else if (adivinanzasAcertadas > adivinanzas.length -5) {
+        alert(`No está mal. Has acertado ${adivinanzasAcertadas} adivinanzas, pero has errado ${adivinanzasErradas}.\n Sigue practicando esa mente retorcida.`);
+      } else {
+        alert(`Necesitas mejorar. Has acertado solo ${adivinanzasAcertadas} adivinanzas y erraste ${adivinanzasErradas}.\n ¡Sigue intentando!`);
+      }
+    //alert(`Adivinanzas acertadas: ${adivinanzasAcertadas}\nAdivinanzas erradas: ${adivinanzasErradas}`);
     const puntajeAnterior = localStorage.getItem('puntajeMasAlto');
     if (puntajeAnterior === null || adivinanzasAcertadas > parseInt(puntajeAnterior)) {
         localStorage.setItem('puntajeMasAlto', adivinanzasAcertadas);
