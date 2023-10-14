@@ -1,0 +1,128 @@
+
+@media (max-width: 768px) {
+    header {
+        display: none;
+        /* Oculta el header en pantallas con un ancho máximo de 768px */
+    }
+    #containerPropuesta {
+    display: flex;
+    flex-direction: column;
+    max-width: 70vw;
+    margin: 10px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 30vh;
+}
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 1.4em;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #c2c2c2;
+}
+
+main {
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#opciones button.selected {
+    box-shadow: 0 0 10px green;
+}
+
+#opciones button.noSelected {
+    box-shadow: 0 0 10px red;
+}
+
+#containerPropuesta {
+    display: flex;
+    flex-direction: column;
+    max-width: 70vw;
+    margin: 10px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#tituloProp {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#opciones {
+    text-align: center;
+}
+
+#opciones button {
+    background-color: hsl(0, 0%, 29%);
+    color: white;
+    padding: 10px 20px;
+    margin: 10px auto;
+    border: none;
+    cursor: pointer;
+    min-width: 70vw;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#correcta {
+    margin-left: 15vw;
+    text-align: left;
+    font-weight: bold;
+
+}
+
+#buttonAndResponseContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* Esto alinea la respuesta en la parte superior */
+}
+
+#cargarOtraAdiv {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 15vw;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.linea-horizontal {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
