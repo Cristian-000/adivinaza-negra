@@ -22,7 +22,14 @@ async function cargarAdivinanzas() {
     try {
         const response = await fetch(jsonURL);
         const data = await response.json();
-        adivinanzas = data;
+        //adivinanzas = data;
+        
+         // Mezclar las adivinanzas en el JSON de forma aleatoria
+         const adivinanzasAleatorias = data.sort(() => Math.random() - 0.5);
+
+         // Tomar solo las primeras 30 frases (o el número que desees)
+         adivinanzas = adivinanzasAleatorias.slice(0, 30);
+
         adivinanzasPorMostrar = [...adivinanzas];
         mostrarAdivinzaAleatoria();
         console.log(adivinanzas);

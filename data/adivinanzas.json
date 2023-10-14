@@ -570,5 +570,58 @@
             "Un beso"
         ],
         "correct": "Un beso"
-    }
+    },
+    {
+        "id": 45,
+        "name": "A menudo esconde secretos",
+        "description": "A menudo esconde secretos y se disfruta en la privacidad del dormitorio.",
+        "question": "¿Qué es?",
+        "options": [
+          "Un diario",
+          "Un juguete",
+          "Un cajón",
+          "Una sorpresa"
+        ],
+        "correct": "Un juguete"
+      },{
+        "id": 46,
+        "name": "Siempre va adelante",
+        "description": "Siempre va adelante, pero a menudo se le da la vuelta. Puede ser de muchas formas y tamaños.",
+        "question": "¿Qué es?",
+        "options": [
+          "El reloj de arena",
+          "El coche",
+          "El avión",
+          "El chicle"
+        ],
+        "correct": "El reloj de arena"
+      },
+      {
+        "id": 47,
+        "name": "A menudo se toma a sorbos",
+        "description": "A menudo se toma a sorbos y puede ser muy reconfortante. Algunos lo prefieren caliente, otros frío.",
+        "question": "¿Qué es?",
+        "options": [
+          "El café",
+          "El agua",
+          "La sopa",
+          "El abrazo"
+        ],
+        "correct": "La sopa"
+      },
+      {
+        "id": 48,
+        "name": "A veces causa explosiones",
+        "description": "A veces causa explosiones y a veces se quema. Puede ser peligroso si no se maneja con cuidado.",
+        "question": "¿Qué es?",
+        "options": [
+          "El fuego artificial",
+          "El libro",
+          "El helado",
+          "El regalo"
+        ],
+        "correct": "El fuego artificial"
+      }
+    
+    
 ]
