@@ -45,6 +45,7 @@ h3 {
 main {
     text-align: center;
     background-color: #f0f0f0;
+    padding-bottom: 15px;
 }
 
 #opciones button.selected {
