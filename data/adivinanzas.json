@@ -5,10 +5,10 @@
         "description": "Tengo un par, van colgando y al caminar se van desplazando..",
         "question": "¿Que son?",
         "options": [
-            "Orejas",
-            "Bolas",
-            "Tetas",
-            "Brazos"
+            "Las orejas",
+            "Las bolas",
+            "Las tetas",
+            "Los brazos"
         ],
         "correct": "Brazos"
     },
@@ -18,10 +18,10 @@
         "description": "Hay una parte del cuerpo del hombre que puede aumentar hasta siete veces su tamaño",
         "question": "¿Que será?",
         "options": [
-            "Uñas",
-            "Ego",
-            "Banana",
-            "Pupilas"
+            "Las uñas",
+            "El ego",
+            "La -banana-",
+            "Las pupilas"
         ],
         "correct": "Pupilas"
     },
@@ -32,7 +32,7 @@
         "question": "¿Qué soy?",
         "options": [
             "Un piano",
-            "Una picha",
+            "Una -picha-",
             "Un corazón",
             "Un tomate"
         ],
@@ -58,7 +58,7 @@
         "question": "¿Qué soy?",
         "options": [
             "Un engranaje",
-            "Un agujero",
+            "Un -agujero-",
             "Un gusano",
             "Una llave"
         ],
@@ -85,7 +85,7 @@
         "options": [
             "Un cigarrillo",
             "Un caramelo",
-            "Una venosa",
+            "Una -venosa-",
             "Una vela"
         ],
         "correct": "Un cigarrillo"
@@ -105,16 +105,16 @@
     },
     {
         "id": 9,
-        "name": "No veo pero soy comestible",
-        "description": "Tengo ojos pero no veo.",
+        "name": "No veo pero pincho",
+        "description": "Tengo ojos pero no veo, a veces tengo cola.",
         "question": "¿Qué soy?",
         "options": [
-            "Una papa",
-            "Un ojo humano",
+            "Una aguja",
+            "Un -zipote-",
             "Una lámpara",
             "Un pez"
         ],
-        "correct": "Una papa"
+        "correct": "Una aguja"
     },
     {
         "id": 10,
@@ -124,7 +124,7 @@
         "options": [
             "Una piedra",
             "Una botella de whisky",
-            "Una serpiente",
+            "Una prima",
             "Una deuda"
         ],
         "correct": "Una botella de whisky"
@@ -132,7 +132,7 @@
     {
         "id": 11,
         "name": "Se endurece cuando lo usas",
-        "description": "Se pone duro cuando lo usas correctamente. ¡No pienses mal!",
+        "description": "Se pone duro cuando lo usas correctamente.",
         "question": "¿Qué es?",
         "options": [
             "Un pañuelo",
@@ -145,7 +145,7 @@
     {
         "id": 12,
         "name": "Soy largo y me encanta ser soplado",
-        "description": "Soy largo y delgado, y la gente me disfruta soplando. ¡Cuidado con lo que piensas!",
+        "description": "Soy largo y delgado, y la gente me disfruta soplando. ¡Cuidado!",
         "question": "¿Qué soy?",
         "options": [
             "Un saxofón",
@@ -158,7 +158,7 @@
     {
         "id": 13,
         "name": "Puedes encontrarlo en la cama",
-        "description": "Lo encuentras en la cama, pero no es una persona. ¡Cuidado con tus pensamientos!",
+        "description": "Lo encuentras en la cama, pero no es una persona.",
         "question": "¿Qué es?",
         "options": [
             "Una sábana",
@@ -223,8 +223,8 @@
     {
         "id": 18,
         "name": "A veces lleno de cuentos",
-        "description": "A veces estoy lleno de cuentos, pero no soy un libro. ¿Qué soy?",
-        "question": "¿Qué es?",
+        "description": "A veces estoy lleno de cuentos, pero no soy un libro.",
+        "question": "¿Qué soy?",
         "options": [
             "Un periódico",
             "Un abuelo",
@@ -330,7 +330,7 @@
         "description": "Nunca está contento, a menos que lo uses correctamente.",
         "question": "¿Qué es?",
         "options": [
-            "Un niño",
+            "Una mascota",
             "Un diente",
             "Un condón",
             "Un martillo"
@@ -346,7 +346,7 @@
             "Un barco",
             "Un jabón",
             "Un hielo",
-            "Un coche"
+            "Un -helado palito-"
         ],
         "correct": "Un jabón"
     },
@@ -356,12 +356,12 @@
         "description": "Soy largo y siempre estoy erecto. La gente disfruta jugando conmigo.",
         "question": "¿Qué soy?",
         "options": [
-            "Un rascacielos",
+            "Un edificio",
             "Un lápiz",
             "Un juguete",
             "Un cepillo"
         ],
-        "correct": "Un rascacielos"
+        "correct": "Un edificio"
     },
     {
         "id": 29,
@@ -370,7 +370,7 @@
         "question": "¿Qué es?",
         "options": [
             "Un abrazo",
-            "Un cajón",
+            "Una tanga",
             "Un mensaje de texto",
             "Un cajón secreto"
         ],
@@ -383,17 +383,17 @@
         "question": "¿Qué soy?",
         "options": [
             "Una galleta",
-            "Un líquido",
+            "Un juguito",
             "Un pastel",
             "Un condón"
         ],
-        "correct": "Un líquido"
+        "correct": "Un juguito"
     },
     {
         "id": 31,
         "name": "Me gusta ser golpeado",
-        "description": "Me encanta ser golpeado, y cuanto más fuerte, mejor. ¿Quién soy?",
-        "question": "¿Qué soy?",
+        "description": "Me encanta ser golpeado, y cuanto más fuerte, mejor.",
+        "question": "¿Quién soy?",
         "options": [
             "Un tambor",
             "Una puerta",
@@ -405,33 +405,33 @@
     {
         "id": 32,
         "name": "Me llevas en el bolsillo",
-        "description": "Me llevas en el bolsillo y me tocas constantemente. ¿Qué soy?",
+        "description": "Me llevas en el bolsillo y me tocas constantemente.",
         "question": "¿Qué soy?",
         "options": [
             "Un billete",
             "Un chicle",
             "Un botón",
-            "Una tableta"
+            "Una ladilla"
         ],
         "correct": "Un botón"
     },
     {
         "id": 33,
         "name": "A menudo en la cama",
-        "description": "A menudo me encuentras en la cama, pero no soy una persona. ¿Quién soy?",
-        "question": "¿Qué soy?",
+        "description": "A menudo me encuentras en la cama, pero no soy una persona.",
+        "question": "¿Quién soy?",
         "options": [
             "Una almohada",
-            "Un colchón",
+            "Un -juguetito-",
             "Un libro",
-            "Un edredón"
+            "Un alcolchado"
         ],
-        "correct": "Un edredón"
+        "correct": "Un alcolchado"
     },
     {
         "id": 34,
         "name": "A veces sabroso",
-        "description": "A veces soy sabroso, a veces no. La gente me disfruta de todas formas. ¿Qué soy?",
+        "description": "A veces soy sabroso, a veces no. La gente me disfruta de todas formas.",
         "question": "¿Qué soy?",
         "options": [
             "Un caramelo",
@@ -463,7 +463,7 @@
             "Un cigarrillo",
             "Un coche",
             "Una barbacoa",
-            "Un incienso"
+            "Un -cañito-"
         ],
         "correct": "Un cigarrillo"
     },
@@ -500,11 +500,11 @@
         "question": "¿Qué es?",
         "options": [
             "Un secreto",
-            "Un chicle",
+            "Un apretón",
             "Un chocolate",
             "Un grito"
         ],
-        "correct": "Un chicle"
+        "correct": "Un secreto"
     },
     {
         "id": 40,
@@ -513,7 +513,7 @@
         "question": "¿Qué es?",
         "options": [
             "Una carta",
-            "Un coche",
+            "Un vecino",
             "Una puerta",
             "Un diario"
         ],
@@ -526,7 +526,7 @@
         "question": "¿Qué es?",
         "options": [
             "Un regalo",
-            "Un juguete",
+            "Un -juguete-",
             "Un chiste",
             "Un sueño"
         ],
@@ -578,11 +578,11 @@
         "question": "¿Qué es?",
         "options": [
           "Un diario",
-          "Un juguete",
+          "Un amigo/a",
           "Un cajón",
           "Una sorpresa"
         ],
-        "correct": "Un juguete"
+        "correct": "Un amigo/a"
       },{
         "id": 46,
         "name": "Siempre va adelante",
@@ -591,7 +591,7 @@
         "options": [
           "El reloj de arena",
           "El coche",
-          "El avión",
+          "El -paragolpes-",
           "El chicle"
         ],
         "correct": "El reloj de arena"
@@ -603,7 +603,7 @@
         "question": "¿Qué es?",
         "options": [
           "El café",
-          "El agua",
+          "La leche",
           "La sopa",
           "El abrazo"
         ],

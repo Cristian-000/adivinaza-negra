@@ -8,7 +8,8 @@ const opciones = document.getElementById('opciones');
 const correcta = document.getElementById('correcta');
 const cargarOtraAdiv = document.getElementById('cargarOtraAdiv');
 const pregunta = document.getElementById('pregunta');
-
+const puntajeMasAltoElement = document.getElementById('puntajeMasAlto');
+const puntajeActualElement = document.getElementById('puntajeActual');
 let adivinanzas = [];
 let currentAdivinzaIndex = 0;
 let adivinanzasPorMostrar = [];
@@ -17,38 +18,29 @@ let respuestaCorrecta = false;
 let adivinanzasAcertadas = 0;
 let adivinanzasErradas = 0;
 
-// Función para cargar las adivinanzas desde el JSON
 async function cargarAdivinanzas() {
     try {
         const response = await fetch(jsonURL);
         const data = await response.json();
-        //adivinanzas = data;
-        
-         // Mezclar las adivinanzas en el JSON de forma aleatoria
-         const adivinanzasAleatorias = data.sort(() => Math.random() - 0.5);
+        const adivinanzasAleatorias = data.sort(() => Math.random() - 0.5);
 
-         // Tomar solo las primeras 30 frases (o el número que desees)
-         adivinanzas = adivinanzasAleatorias.slice(0, 30);
+        adivinanzas = adivinanzasAleatorias.slice(0, 20);
 
         adivinanzasPorMostrar = [...adivinanzas];
         mostrarAdivinzaAleatoria();
         console.log(adivinanzas);
 
-        // Crea dinámicamente la línea horizontal con segmentos
         crearLineaHorizontal(adivinanzas.length);
     } catch (error) {
         console.error('Error al cargar las adivinanzas:', error);
     }
 }
 
-// Función para mostrar una adivinanza aleatoria
 function mostrarAdivinzaAleatoria() {
     if (adivinanzasPorMostrar.length === 0) {
-        // Si ya se mostraron todas las adivinanzas, reiniciamos el arreglo
         adivinanzasPorMostrar = [...adivinanzas];
     }
 
-    // Elegir una adivinanza aleatoria de las que quedan por mostrar
     const randomIndex = Math.floor(Math.random() * adivinanzasPorMostrar.length);
     const adivinza = adivinanzasPorMostrar[randomIndex];
     adivinanzasPorMostrar.splice(randomIndex, 1);
@@ -57,7 +49,6 @@ function mostrarAdivinzaAleatoria() {
     propuesta.textContent = adivinza.description;
     pregunta.textContent = adivinza.question;
 
-    // Mezclar las opciones de forma aleatoria
     const opcionesAleatorias = shuffle(adivinza.options);
 
     opciones.innerHTML = '';
@@ -69,9 +60,8 @@ function mostrarAdivinzaAleatoria() {
     });
 }
 
-// Función para mezclar un arreglo de forma aleatoria
 function shuffle(array) {
-    let currentIndex = array.length-1,
+    let currentIndex = array.length - 1,
         randomIndex,
         temporaryValue;
 
@@ -87,12 +77,10 @@ function shuffle(array) {
     return array;
 }
 
-// Función para comprobar la respuesta
 function comprobarRespuesta(respuesta, correctaRespuesta) {
     const opciones = document.querySelectorAll('#opciones button');
     const botonSeleccionado = Array.from(opciones).find((option) => option.textContent === respuesta);
 
-    // Limpiar las clases de los botones
     opciones.forEach((option) => {
         option.classList.remove('selected');
         option.classList.remove('noSelected');
@@ -114,13 +102,19 @@ function comprobarRespuesta(respuesta, correctaRespuesta) {
         colorearSiguienteSegmento();
         respuestaCorrecta = true;
     }
+    agregarPuntajeActual()
     cargarOtraAdiv.removeAttribute('disabled');
 }
 
 
 function mostrarResultadoFinal() {
-    // Mostrar un mensaje con la cantidad de adivinanzas acertadas y erradas
     alert(`Adivinanzas acertadas: ${adivinanzasAcertadas}\nAdivinanzas erradas: ${adivinanzasErradas}`);
+    const puntajeAnterior = localStorage.getItem('puntajeMasAlto');
+    if (puntajeAnterior === null || adivinanzasAcertadas > parseInt(puntajeAnterior)) {
+        localStorage.setItem('puntajeMasAlto', adivinanzasAcertadas);
+        mostrarPuntajeMasAlto(); 
+    }
+
     // Reiniciar el juego
     adivinanzasPorMostrar = [...adivinanzas];
     currentAdivinzaIndex = 0;
@@ -128,6 +122,9 @@ function mostrarResultadoFinal() {
     adivinanzasAcertadas = 0;
     adivinanzasErradas = 0;
     respuestaCorrecta = false
+    correcta.textContent = "";
+    cargarOtraAdiv.style.color = 'white';
+    puntajeActualElement.textContent = ` 0 / ${adivinanzas.length}`;
 
     // Reiniciar la línea de segmentos
     const segmentos = document.querySelectorAll('.segmento');
@@ -135,29 +132,25 @@ function mostrarResultadoFinal() {
         segmento.style.backgroundColor = '#000';
     });
     cargarOtraAdiv.textContent = 'Siguiente';
-        cargarOtraAdiv.style.backgroundColor = '#333';
-    
-    // Mostrar la primera adivinanza después de reiniciar
+    cargarOtraAdiv.style.backgroundColor = '#333';
     mostrarAdivinzaAleatoria();
 }
 
-
-// Función para colorear el siguiente segmento de la línea
 function colorearSiguienteSegmento() {
     const segmentos = document.querySelectorAll('.segmento');
-   
+
     if (segmentoActual < segmentos.length) {
         segmentos[segmentoActual].style.backgroundColor = cargarOtraAdiv.style.backgroundColor;
     }
     if (segmentoActual === segmentos.length - 1) {
         // Cambiar el texto y el color del botón en el último segmento
-        cargarOtraAdiv.textContent = 'Reiniciar';
-        cargarOtraAdiv.style.backgroundColor = 'gold'; // o el color dorado que desees
+        cargarOtraAdiv.textContent = 'Ver puntaje';
+        cargarOtraAdiv.style.backgroundColor = 'gold';
+        cargarOtraAdiv.style.color = 'black';
     }
- 
+
     segmentoActual++;
 }
-
 
 cargarOtraAdiv.addEventListener('click', () => {
     if (currentAdivinzaIndex < adivinanzas.length - 1) {
@@ -171,10 +164,6 @@ cargarOtraAdiv.addEventListener('click', () => {
     cargarOtraAdiv.setAttribute('disabled', 'disabled');
 });
 
-// Iniciar la carga de adivinanzas
-cargarAdivinanzas();
-
-// Función para crear dinámicamente la línea horizontal con segmentos
 function crearLineaHorizontal(numeroSegmentos) {
     const footer = document.createElement('footer');
     footer.style.width = '100%';
@@ -198,3 +187,19 @@ function crearLineaHorizontal(numeroSegmentos) {
     footer.appendChild(lineaHorizontal);
     document.body.appendChild(footer);
 }
+
+function mostrarPuntajeMasAlto() {
+    const puntajeMasAlto = localStorage.getItem('puntajeMasAlto');
+    if (puntajeMasAlto !== null) {
+        puntajeMasAltoElement.textContent =`${puntajeMasAlto} - ` ;
+    }
+}
+function agregarPuntajeActual() {
+    puntajeActualElement.textContent = `${adivinanzasAcertadas} / ${adivinanzas.length}`;
+  }
+  
+
+window.addEventListener('load', () => {
+    cargarAdivinanzas();
+    mostrarPuntajeMasAlto();
+});
