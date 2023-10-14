@@ -115,5 +115,460 @@
             "Un pez"
         ],
         "correct": "Una papa"
+    },
+    {
+        "id": 10,
+        "name": "Dura y pesada",
+        "description": "Soy dura, pesada y me encanta el balanceo.",
+        "question": "¿Qué soy?",
+        "options": [
+            "Una piedra",
+            "Una botella de whisky",
+            "Una serpiente",
+            "Una deuda"
+        ],
+        "correct": "Una botella de whisky"
+    },
+    {
+        "id": 11,
+        "name": "Se endurece cuando lo usas",
+        "description": "Se pone duro cuando lo usas correctamente. ¡No pienses mal!",
+        "question": "¿Qué es?",
+        "options": [
+            "Un pañuelo",
+            "Un músculo",
+            "Un caramelo",
+            "Un paraguas"
+        ],
+        "correct": "Un caramelo"
+    },
+    {
+        "id": 12,
+        "name": "Soy largo y me encanta ser soplado",
+        "description": "Soy largo y delgado, y la gente me disfruta soplando. ¡Cuidado con lo que piensas!",
+        "question": "¿Qué soy?",
+        "options": [
+            "Un saxofón",
+            "Una vela",
+            "Un globo",
+            "Un par de calcetines"
+        ],
+        "correct": "Un globo"
+    },
+    {
+        "id": 13,
+        "name": "Puedes encontrarlo en la cama",
+        "description": "Lo encuentras en la cama, pero no es una persona. ¡Cuidado con tus pensamientos!",
+        "question": "¿Qué es?",
+        "options": [
+            "Una sábana",
+            "Un sueño",
+            "Un secreto",
+            "Un látigo"
+        ],
+        "correct": "Un sueño"
+    },
+    {
+        "id": 14,
+        "name": "Puedo ser agresivo o tranquilo",
+        "description": "Puedo ser agresivo o tranquilo, pero siempre estoy lleno de emociones.",
+        "question": "¿Qué soy?",
+        "options": [
+            "Un tiburón",
+            "Un volcán",
+            "Un libro",
+            "Una telenovela"
+        ],
+        "correct": "Una telenovela"
+    },
+    {
+        "id": 15,
+        "name": "Siempre va hacia adelante",
+        "description": "Siempre me muevo hacia adelante, no importa lo que hagas.",
+        "question": "¿Qué soy?",
+        "options": [
+            "Un reloj",
+            "Un deseo",
+            "Un trasero",
+            "Un tren"
+        ],
+        "correct": "Un tren"
+    },
+    {
+        "id": 16,
+        "name": "Lo tienes en tu bolsillo",
+        "description": "Lo llevas en tu bolsillo y a menudo te hace vibrar.",
+        "question": "¿Qué es?",
+        "options": [
+            "Un teléfono",
+            "Un beso",
+            "Un pañuelo",
+            "Una tarta"
+        ],
+        "correct": "Un teléfono"
+    },
+    {
+        "id": 17,
+        "name": "Muy utilizado en la boca",
+        "description": "Muy común en la boca de las personas, pero nadie lo quiere ver.",
+        "question": "¿Qué es?",
+        "options": [
+            "Un diente",
+            "Un chicle",
+            "Una uña",
+            "Un brócoli"
+        ],
+        "correct": "Un brócoli"
+    },
+    {
+        "id": 18,
+        "name": "A veces lleno de cuentos",
+        "description": "A veces estoy lleno de cuentos, pero no soy un libro. ¿Qué soy?",
+        "question": "¿Qué es?",
+        "options": [
+            "Un periódico",
+            "Un abuelo",
+            "Un televisor",
+            "Una biblioteca"
+        ],
+        "correct": "Un abuelo"
+    },
+    {
+        "id": 19,
+        "name": "Bueno para rascar",
+        "description": "A menudo me usan para rascar, y cuando hago mi trabajo, todos se sienten mejor.",
+        "question": "¿Qué soy?",
+        "options": [
+            "Una tarjeta de crédito",
+            "Un gato",
+            "Un peine",
+            "Un abrazo"
+        ],
+        "correct": "Un abrazo"
+    },
+    {
+        "id": 20,
+        "name": "Siempre en la boca de todos",
+        "description": "Estoy siempre en la boca de todos, pero nunca digo una palabra.",
+        "question": "¿Qué soy?",
+        "options": [
+            "Un chisme",
+            "Un lápiz",
+            "Un teléfono",
+            "Un beso"
+        ],
+        "correct": "Un chisme"
+    },
+    {
+        "id": 21,
+        "name": "Puede ser dulce o amargo",
+        "description": "A veces soy dulce, a veces soy amargo, y todos me disfrutan al final.",
+        "question": "¿Qué soy?",
+        "options": [
+            "El destino",
+            "El chocolate",
+            "El café",
+            "Un mensaje de texto"
+        ],
+        "correct": "El chocolate"
+    },
+    {
+        "id": 22,
+        "name": "Lo usas antes de dormir",
+        "description": "Lo usas antes de dormir, a veces solo o con alguien más.",
+        "question": "¿Qué es?",
+        "options": [
+            "Un sueño",
+            "Un libro",
+            "Un colchón",
+            "Un somnífero"
+        ],
+        "correct": "Un libro"
+    },
+    {
+        "id": 23,
+        "name": "Puede ser fuerte o suave",
+        "description": "Puedo ser fuerte o suave, y a menudo me encuentras en la cama.",
+        "question": "¿Qué soy?",
+        "options": [
+            "Un café",
+            "Un amor",
+            "Un ronquido",
+            "Una almohada"
+        ],
+        "correct": "Una almohada"
+    },
+    {
+        "id": 24,
+        "name": "A menudo en la boca de los políticos",
+        "description": "A menudo me encuentras en la boca de los políticos, pero rara vez en la de los ciudadanos.",
+        "question": "¿Qué soy?",
+        "options": [
+            "La verdad",
+            "Un discurso",
+            "Un chicle",
+            "Un helado"
+        ],
+        "correct": "Un discurso"
+    },
+    {
+        "id": 25,
+        "name": "A menudo se llena de líquido",
+        "description": "A menudo se llena de líquido y puede ser difícil de mantener bajo control.",
+        "question": "¿Qué es?",
+        "options": [
+            "Un vaso",
+            "Un barril",
+            "Un preservativo",
+            "Un paraguas"
+        ],
+        "correct": "Un preservativo"
+    },
+    {
+        "id": 26,
+        "name": "Nunca está contento",
+        "description": "Nunca está contento, a menos que lo uses correctamente.",
+        "question": "¿Qué es?",
+        "options": [
+            "Un niño",
+            "Un diente",
+            "Un condón",
+            "Un martillo"
+        ],
+        "correct": "Un condón"
+    },
+    {
+        "id": 27,
+        "name": "Le gusta estar mojado",
+        "description": "Le gusta estar mojado y a menudo se desliza. ¡Cuidado!",
+        "question": "¿Qué es?",
+        "options": [
+            "Un barco",
+            "Un jabón",
+            "Un hielo",
+            "Un coche"
+        ],
+        "correct": "Un jabón"
+    },
+    {
+        "id": 28,
+        "name": "Siempre erecto",
+        "description": "Soy largo y siempre estoy erecto. La gente disfruta jugando conmigo.",
+        "question": "¿Qué soy?",
+        "options": [
+            "Un rascacielos",
+            "Un lápiz",
+            "Un juguete",
+            "Un cepillo"
+        ],
+        "correct": "Un rascacielos"
+    },
+    {
+        "id": 29,
+        "name": "Esconde algo en su interior",
+        "description": "Siempre esconde algo en su interior y se disfruta más cuando se desliza.",
+        "question": "¿Qué es?",
+        "options": [
+            "Un abrazo",
+            "Un cajón",
+            "Un mensaje de texto",
+            "Un cajón secreto"
+        ],
+        "correct": "Un cajón secreto"
+    },
+    {
+        "id": 30,
+        "name": "A menudo se desliza por la garganta",
+        "description": "A menudo me encuentras en la boca y disfruto deslizándome por la garganta.",
+        "question": "¿Qué soy?",
+        "options": [
+            "Una galleta",
+            "Un líquido",
+            "Un pastel",
+            "Un condón"
+        ],
+        "correct": "Un líquido"
+    },
+    {
+        "id": 31,
+        "name": "Me gusta ser golpeado",
+        "description": "Me encanta ser golpeado, y cuanto más fuerte, mejor. ¿Quién soy?",
+        "question": "¿Qué soy?",
+        "options": [
+            "Un tambor",
+            "Una puerta",
+            "Una piñata",
+            "Un teléfono"
+        ],
+        "correct": "Una piñata"
+    },
+    {
+        "id": 32,
+        "name": "Me llevas en el bolsillo",
+        "description": "Me llevas en el bolsillo y me tocas constantemente. ¿Qué soy?",
+        "question": "¿Qué soy?",
+        "options": [
+            "Un billete",
+            "Un chicle",
+            "Un botón",
+            "Una tableta"
+        ],
+        "correct": "Un botón"
+    },
+    {
+        "id": 33,
+        "name": "A menudo en la cama",
+        "description": "A menudo me encuentras en la cama, pero no soy una persona. ¿Quién soy?",
+        "question": "¿Qué soy?",
+        "options": [
+            "Una almohada",
+            "Un colchón",
+            "Un libro",
+            "Un edredón"
+        ],
+        "correct": "Un edredón"
+    },
+    {
+        "id": 34,
+        "name": "A veces sabroso",
+        "description": "A veces soy sabroso, a veces no. La gente me disfruta de todas formas. ¿Qué soy?",
+        "question": "¿Qué soy?",
+        "options": [
+            "Un caramelo",
+            "Un chicle",
+            "Un café",
+            "Un beso"
+        ],
+        "correct": "Un beso"
+    },
+    {
+        "id": 35,
+        "name": "Se moja cuando llueve",
+        "description": "Se moja cuando llueve y todos quieren entrar en él.",
+        "question": "¿Qué es?",
+        "options": [
+            "Un paraguas",
+            "Un techo",
+            "Un refugio",
+            "Una piscina"
+        ],
+        "correct": "Un paraguas"
+    },
+    {
+        "id": 36,
+        "name": "Se llena de humo",
+        "description": "Se llena de humo y la gente disfruta inhalándolo.",
+        "question": "¿Qué es?",
+        "options": [
+            "Un cigarrillo",
+            "Un coche",
+            "Una barbacoa",
+            "Un incienso"
+        ],
+        "correct": "Un cigarrillo"
+    },
+    {
+        "id": 37,
+        "name": "Hace ruido al caer",
+        "description": "Hago ruido al caer y todos me quieren en su mano.",
+        "question": "¿Qué soy?",
+        "options": [
+            "Un billete",
+            "Un caramelo",
+            "Un ladrillo",
+            "Un móvil"
+        ],
+        "correct": "Un billete"
+    },
+    {
+        "id": 38,
+        "name": "Se llena de líquido",
+        "description": "A menudo se llena de líquido y todos lo disfrutan con una sonrisa.",
+        "question": "¿Qué es?",
+        "options": [
+            "Un vaso",
+            "Un grifo",
+            "Un biberón",
+            "Un frasco de perfume"
+        ],
+        "correct": "Un vaso"
+    },
+    {
+        "id": 39,
+        "name": "A menudo se comparte en público",
+        "description": "A menudo se comparte en público y puede ser dulce o amargo.",
+        "question": "¿Qué es?",
+        "options": [
+            "Un secreto",
+            "Un chicle",
+            "Un chocolate",
+            "Un grito"
+        ],
+        "correct": "Un chicle"
+    },
+    {
+        "id": 40,
+        "name": "A menudo esconde secretos",
+        "description": "A menudo esconde secretos y se disfruta en privado.",
+        "question": "¿Qué es?",
+        "options": [
+            "Una carta",
+            "Un coche",
+            "Una puerta",
+            "Un diario"
+        ],
+        "correct": "Un diario"
+    },
+    {
+        "id": 41,
+        "name": "Puede ser grande o pequeño",
+        "description": "Puede ser grande o pequeño y a todos les gusta jugar con él.",
+        "question": "¿Qué es?",
+        "options": [
+            "Un regalo",
+            "Un juguete",
+            "Un chiste",
+            "Un sueño"
+        ],
+        "correct": "Un chiste"
+    },
+    {
+        "id": 42,
+        "name": "Es difícil de mantener bajo control",
+        "description": "Es difícil de mantener bajo control y puede ser muy satisfactorio.",
+        "question": "¿Qué es?",
+        "options": [
+            "Una risa",
+            "Una serpiente",
+            "Un incendio",
+            "Un secreto"
+        ],
+        "correct": "Una risa"
+    },
+    {
+        "id": 43,
+        "name": "Siempre está caliente",
+        "description": "Siempre está caliente y a menudo te quemas si no tienes cuidado.",
+        "question": "¿Qué es?",
+        "options": [
+            "Una cocina",
+            "Una manta",
+            "Una vela",
+            "Un abrazo"
+        ],
+        "correct": "Una vela"
+    },
+    {
+        "id": 44,
+        "name": "Puede ser agrio o dulce",
+        "description": "Puede ser agrio o dulce, y a menudo se disfruta en pareja.",
+        "question": "¿Qué es?",
+        "options": [
+            "Una conversación",
+            "Una fruta",
+            "Una bebida",
+            "Un beso"
+        ],
+        "correct": "Un beso"
     }
 ]
